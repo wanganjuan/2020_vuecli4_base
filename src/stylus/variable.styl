@@ -1,1 +1,123 @@
-$color = red
+// 参考设计 http://10.0.10.46/web/#/item/project/board/detail?pid=6c702ddc-f4bf-48bc-9295-20c88e5131ad&project_id=6c702ddc-f4bf-48bc-9295-20c88e5131ad&image_id=784399ba-dc03-4f65-86c4-aabf12ebf128
+// 主色
+$base_color = #3DC1DF
+$base_color_hover = #77D3E8
+$base_color_active = #37AEC9
+
+// 辅助色
+$notice = #2CB5F3
+$success = #56CD75
+$warning = #F6A146
+$error = #F63A44
+
+// 中性色
+// 主要文字
+$font-color = #333333
+// 常规文字
+$font-normal-color = #666666
+$font-other-color = #999999
+// 边框
+$border = #DCDFE6
+// 分割线
+$split = #EBEBF0
+$background-color = #ffffff
+
+// 文字
+$font-size = 14px
+$font-big = 18px
+$font-mini = 12px
+$font-large = 26px
+
+// hover 只是样式的抽取
+k-hover()
+  &:hover
+    color $base_color_hover
+
+// 表格按钮抽取
+.common-text-button
+  cursor pointer
+  color $base_color
+  margin-right 24px
+  &.common-text-button-disabled
+    color $font-other-color
+    cursor not-allowed
+    &:hover
+      color $font-other-color
+  k-hover()
+
+.jv-container .jv-code
+  line-height 20px
+
+.flex-x
+  display: flex
+  
+.flex-center
+  display flex
+  align-items center
+  justify-content center
+
+@keyframes turn{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}// 参考设计 http://10.0.10.46/web/#/item/project/board/detail?pid=6c702ddc-f4bf-48bc-9295-20c88e5131ad&project_id=6c702ddc-f4bf-48bc-9295-20c88e5131ad&image_id=784399ba-dc03-4f65-86c4-aabf12ebf128
+// 主色
+$base_color = #3DC1DF
+$base_color_hover = #77D3E8
+$base_color_active = #37AEC9
+
+// 辅助色
+$notice = #2CB5F3
+$success = #56CD75
+$warning = #F6A146
+$error = #F63A44
+
+// 中性色
+// 主要文字
+$font-color = #333333
+// 常规文字
+$font-normal-color = #666666
+$font-other-color = #999999
+// 边框
+$border = #DCDFE6
+// 分割线
+$split = #EBEBF0
+$background-color = #ffffff
+
+// 文字
+$font-size = 14px
+$font-big = 18px
+$font-mini = 12px
+$font-large = 26px
+
+// hover 只是样式的抽取
+k-hover()
+  &:hover
+    color $base_color_hover
+
+// 表格按钮抽取
+.common-text-button
+  cursor pointer
+  color $base_color
+  margin-right 24px
+  &.common-text-button-disabled
+    color $font-other-color
+    cursor not-allowed
+    &:hover
+      color $font-other-color
+  k-hover()
+
+.jv-container .jv-code
+  line-height 20px
+
+.flex-x
+  display: flex
+  
+.flex-center
+  display flex
+  align-items center
+  justify-content center
+
+@keyframes turn{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}

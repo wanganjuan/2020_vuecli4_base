@@ -1,0 +1,94 @@
+/*cssreset*/
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: PingFangSC,Microsoft Yahei,STHeitiSC-Light,Helvetica-Light,arial,sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+  padding 0
+  margin 0
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* td, th {
+  padding: 5px 10px;
+  border: 1px solid #DDD;
+} */
+input:focus, button:focus {
+  outline: none;
+}
+
+.iconSVG {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #ccc
+}
+::-webkit-scrollbar-track {
+    background-color: #eee
+}
+
+html,body {
+  background-color: $background-color;
+  font-size: 14px;
+  overflow: auto;
+  // color: $font-color;
+  color: #333;
+  scroll-behavior: smooth;
+  min-height 578px
+  min-width 1280px
+}
+h1 {
+  margin: 0;
+}
+h2,h3,h4,h5,h6,h1 {
+  font-weight: normal;
+  margin-left: 0;
+}
+
+// input::-webkit-input-placeholder
+//   color $font-other-color !important
+// textarea::-webkit-input-placeholder
+//   color $font-other-color !important
+//   font-size $font-size !important
+//   font-family: PingFangSC,Microsoft Yahei,STHeitiSC-Light,Helvetica-Light,arial,sans-serif;

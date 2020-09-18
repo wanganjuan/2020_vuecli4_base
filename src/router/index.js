@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import MainLayout from '@components/layout/main-layout.vue'
 import Home from '@views/Home.vue'
 
 Vue.use(VueRouter)
@@ -7,8 +8,14 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home
+    redirect: '/main/home'
+  },
+  {
+    path: '/main',
+    component: MainLayout,
+    children: [
+      {path: 'home', component: Home}
+    ]
   },
   {
     path: '/about',

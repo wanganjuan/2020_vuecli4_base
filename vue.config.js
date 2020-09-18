@@ -7,7 +7,7 @@ const IS_DEV = ["development"].includes(process.env.NODE_ENV);
 
 module.exports = {
   // 默认'/'，部署应用包时的基本 URL
-  publicPath: IS_PROD ? process.env.VUE_APP_PUBLIC_PATH : "./",
+  publicPath: IS_PROD ? process.env.VUE_APP_PUBLIC_PATH : "/",
 
   // outputDir: process.env.outputDir || 'dist', // 'dist', 生产环境构建文件的目录
   // assetsDir: "", // 相对于outputDir的静态资源(js、css、img、fonts)目录
@@ -24,11 +24,11 @@ module.exports = {
 
   devServer: {
     host: '0.0.0.0',
-    port: 8080,
+    port: 8085,
     proxy: {
       // detail: https://cli.vuejs.org/config/#devserver-proxy
       [process.env.VUE_APP_BASE_API]: {
-        target: `http://localhost:8080`,
+        target: `http://localhost:8085`,
         changeOrigin: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''

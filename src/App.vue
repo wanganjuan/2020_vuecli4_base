@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <p @click="_goRouterByPath('/')">Home</p> | <p @click="_goRouterByPath('/about')">About</p>
     </div>
     <div @click="_changeMsg()">{{ msg }}</div>
     <h1>{{state.count}}</h1>
-    <h2>12311===={{plusOne}}</h2>
+    <h2>12311===={{plusOne}}</h2> -->
     <router-view />
   </div>
 </template>

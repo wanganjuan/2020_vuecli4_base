@@ -8289,6 +8289,11 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
+turing_dialog@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/turing_dialog/-/turing_dialog-1.0.3.tgz#87a055abfc419ca850d256c38d8294bd1f400f4f"
+  integrity sha512-R9L2NeMCTX0IITEajJCQhI2ICTzX2leVIzFADZHVPPBUduEx/Kc7TMoUB6tOcBUEWs6S7BhHcxTQA/Ow6Cqj5A==
+
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.npm.taobao.org/tweetnacl/download/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"

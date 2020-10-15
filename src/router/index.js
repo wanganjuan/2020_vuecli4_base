@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainLayout from '@components/layout/main-layout.vue'
 import Home from '@views/Home.vue'
+import Project from '@views/project/project.vue'
 
 Vue.use(VueRouter)
 
@@ -19,7 +20,8 @@ const routes = [
     path: '/main',
     component: MainLayout,
     children: [
-      {path: 'home', component: Home}
+      {path: 'home', component: Home},
+      {path: 'project', component: Project}
     ]
   },
   {

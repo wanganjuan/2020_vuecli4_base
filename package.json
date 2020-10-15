@@ -14,6 +14,7 @@
     "core-js": "^3.6.5",
     "element-ui": "^2.3.6",
     "sass-loader": "^10.0.2",
+    "turing_dialog": "^1.0.3",
     "vue": "^2.6.11",
     "vue-router": "^3.4.3",
     "vuex": "^3.4.0"

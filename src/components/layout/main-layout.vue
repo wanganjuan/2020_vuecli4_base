@@ -1,16 +1,20 @@
 <template>
   <div class="m-layout">
     <header class="m-header"></header>
+    <Nav />
     <div class="m-content">
-      <el-button type="primary">13</el-button>
       <router-view />
     </div>
   </div>
 </template>
 
 <script>
+import Nav from './nav-common'
 export default {
-  name: 'main-layout'
+  name: 'nav-common',
+  components: {
+    Nav
+  }
 }
 </script>
 
@@ -23,6 +27,10 @@ export default {
       line-height 50px
       width 100%
       background blue
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99
     .m-content
       position absolute
       top 50px

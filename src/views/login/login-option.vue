@@ -22,8 +22,10 @@
 import {login} from '@/api/user'
 // 使用新特性
 import { toRefs, reactive } from '@vue/composition-api'
+import Login from './login.js'
 export default {
   setup (_, context) {
+    console.log(context.root.$bmessage())
     const {root: {$router}} = context
     const _data = reactive({
       username: '',
@@ -31,20 +33,6 @@ export default {
       password: '',
       passwordErrorMsg: ''
     })
-    const _check = (option) => {
-      if (option === 'username') {
-        if (!_data.username) {
-          _data.usernameErrorMsg = '请输入正确用户名'
-          return false
-        }
-      } else {
-        if (!_data.password) {
-          _data.passwordErrorMsg = '请输入密码'
-          return false
-        }
-      }
-      return true
-    }
     const _foucs = (option) => {
       if (option === 'username') {
         _data.usernameErrorMsg = ''
@@ -53,7 +41,7 @@ export default {
       }
     }
     const _submitLogin = () => {
-      if (_check('username') && _check('password')) {
+      if (Login('username', _data) && Login('password', _data)) {
         login({
           username: _data.username,
           password: _data.password
@@ -65,10 +53,9 @@ export default {
         })
       }
     }
-    console.log(toRefs(_data))
     return {
       ...toRefs(_data),
-      _check,
+      _check: Login,
       _foucs,
       _submitLogin
     }

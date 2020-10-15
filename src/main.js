@@ -4,6 +4,7 @@ import './plugins/element.js'
 import store from './store'
 import router from './router'
 import VueCompositionAPI from '@vue/composition-api'
+import Dialog from './components/dialog'
 import axios from './api'
 
 // 引入默认样式
@@ -15,7 +16,7 @@ import '@babel/polyfill'
 Vue.config.productionTip = false
 Vue.use(VueCompositionAPI)
 Vue.use(axios)
-
+Vue.use(Dialog)
 new Vue({
   store,
   router,

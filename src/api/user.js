@@ -18,3 +18,9 @@ export function login (data) {
   const baseUrl = _base + '/login'
   return axios.post(baseUrl, data)
 }
+
+// 项目分页列表
+export function getProjectList (data) {
+  const baseUrl = '/platform/projects' + '/page'
+  return axios.post(baseUrl, data)
+}

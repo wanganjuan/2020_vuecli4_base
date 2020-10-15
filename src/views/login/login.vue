@@ -3,7 +3,7 @@
     <div class="login-content-position">
       <div class="login-content">
         <div class="login-logo"><img src="../../assets/logo.png"><span>优化训练平台</span></div>
-        <div class="login-welcome">您好！欢迎登录</div>
+        <div class="login-welcome">您好！欢迎登录z</div>
         <LoginOption></LoginOption>
       </div>
     </div>

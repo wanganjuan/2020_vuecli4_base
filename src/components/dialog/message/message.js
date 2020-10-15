@@ -13,8 +13,38 @@ MessageConstructor.prototype.closeMessage = function (stay, callback) {
   el.parentNode && el.parentNode.removeChild(el)
 }
 const message = (options = {}) => {
-  instance.content = options.content
-  instance.type = options.type
+  instance.mes = options.mes
+  const type = options.type
+  let temp = {}
+  switch (type) {
+    case 'warning':
+      temp = {
+        clazz: 'tishi',
+        icon: 'tishi'
+      }
+      break
+    case 'error':
+      temp = {
+        clazz: 'cuowu',
+        icon: 'cuowu'
+      }
+      break
+    case 'success':
+      temp = {
+        clazz: 'chenggong',
+        icon: 'chenggong'
+      }
+      break
+    default:
+      temp = {
+        clazz: 'xinxitishi',
+        icon: 'xinxitishi'
+      }
+  }
+  const clazzList = []
+  clazzList.push(temp.clazz)
+  instance.clazzList = clazzList
+  instance.icon = temp.icon
   document.body.appendChild(el)
 }
 export default message

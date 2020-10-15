@@ -1,18 +1,23 @@
 <template>
-  <div class="message-dialog" :class="clazzList" @mouseover="_showMessage" @mouseleave="_closeMessage">123124443</div>
+  <div class="message-dialog" :class="clazzList" @mouseover="_showMessage" @mouseleave="_closeMessage">
+    <TSVG class="message-svg" :name="`icon-${icon}`"/>{{mes}}<span class="biconfont icon-guanbi message-close" @click="closeMessage()"/>
+  </div>
 </template>
 
 <script>
+import TSVG from '../../common/svg-icon.vue'
 export default {
   props: {
-    content: String,
-    type: String,
-    timeout: null
+    mes: String,
+    icon: String,
+    clazzList: Array
+  },
+  components: {
+    TSVG
   },
   data () {
     return {
-      clazzList: [],
-      icon: ''
+      timeout: null
     }
   },
   methods: {
@@ -25,41 +30,10 @@ export default {
       }, 3000)
     }
   },
-  created () {
-    const type = this.type
-    let temp = {}
-    switch (type) {
-      case 'warning':
-        temp = {
-          clazz: 'tishi',
-          icon: 'tishi'
-        }
-        break
-      case 'error':
-        temp = {
-          clazz: 'cuowu',
-          icon: 'cuowu'
-        }
-        break
-      case 'success':
-        temp = {
-          clazz: 'chenggong',
-          icon: 'chenggong'
-        }
-        break
-      default:
-        temp = {
-          clazz: 'xinxitishi',
-          icon: 'xinxitishi'
-        }
-    }
-    this.clazzList.push(temp.clazz)
-    this.icon = temp.icon
-  },
   mounted () {
-    this.timeout = setTimeout(() => {
-      this.closeMessage()
-    }, 3000)
+    // this.timeout = setTimeout(() => {
+    //   this.closeMessage()
+    // }, 3000)
   },
   beforeDestroy () {
     this.timeout && clearTimeout(this.timeout)
@@ -93,9 +67,34 @@ export default {
     border-left: 4px solid;
     box-sizing border-box
     animation show 0.5s ease
+    padding 0 40px 0 62px
+    .message-svg {
+      position absolute
+      width 20px
+      height 20px
+      left 30px
+      top 18px
+    }
+    .message-close {
+      position absolute
+      font-size 12px
+      right 20px
+      cursor pointer
+      &:hover {
+        color #3065FF
+      }
+    }
     &.xinxitishi {
       border-color: #2CB5F3;
-      padding 0 40px 0 62px
+    }
+    &.cuowu {
+      border-color: #F63A44;
+    }
+    &.tishi {
+      border-color: #F6A146;
+    }
+    &.chenggong {
+      border-color: #56CD75;
     }
   }
 </style>

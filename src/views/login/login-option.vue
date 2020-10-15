@@ -25,7 +25,10 @@ import { toRefs, reactive } from '@vue/composition-api'
 import Login from './login.js'
 export default {
   setup (_, context) {
-    console.log(context.root.$bmessage())
+    context.root.$bmessage({
+      mes: '新增成功',
+      type: 'success'
+    })
     const {root: {$router}} = context
     const _data = reactive({
       username: '',

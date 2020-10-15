@@ -2,9 +2,184 @@
   "id": "2117490",
   "name": "优化训练平台",
   "font_family": "biconfont",
-  "css_prefix_text": "bicon-",
+  "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
+    {
+      "icon_id": "17591003",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e860",
+      "unicode_decimal": 59488
+    },
+    {
+      "icon_id": "17591004",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e861",
+      "unicode_decimal": 59489
+    },
+    {
+      "icon_id": "17591005",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e862",
+      "unicode_decimal": 59490
+    },
+    {
+      "icon_id": "17591006",
+      "name": "时钟",
+      "font_class": "shizhong",
+      "unicode": "e863",
+      "unicode_decimal": 59491
+    },
+    {
+      "icon_id": "17590842",
+      "name": "排序",
+      "font_class": "paixu",
+      "unicode": "e852",
+      "unicode_decimal": 59474
+    },
+    {
+      "icon_id": "17590843",
+      "name": "添加",
+      "font_class": "tianjia1",
+      "unicode": "e853",
+      "unicode_decimal": 59475
+    },
+    {
+      "icon_id": "17590844",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e854",
+      "unicode_decimal": 59476
+    },
+    {
+      "icon_id": "17590845",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e855",
+      "unicode_decimal": 59477
+    },
+    {
+      "icon_id": "17590846",
+      "name": "播放中",
+      "font_class": "bofangzhong",
+      "unicode": "e856",
+      "unicode_decimal": 59478
+    },
+    {
+      "icon_id": "17590847",
+      "name": "文件-音频",
+      "font_class": "wenjian-yinpin",
+      "unicode": "e857",
+      "unicode_decimal": 59479
+    },
+    {
+      "icon_id": "17590848",
+      "name": "文件",
+      "font_class": "wenjian",
+      "unicode": "e858",
+      "unicode_decimal": 59480
+    },
+    {
+      "icon_id": "17590849",
+      "name": "提示",
+      "font_class": "tishi1",
+      "unicode": "e859",
+      "unicode_decimal": 59481
+    },
+    {
+      "icon_id": "17590851",
+      "name": "TXT ",
+      "font_class": "TXT",
+      "unicode": "e85a",
+      "unicode_decimal": 59482
+    },
+    {
+      "icon_id": "17590852",
+      "name": "zip ",
+      "font_class": "zip",
+      "unicode": "e85b",
+      "unicode_decimal": 59483
+    },
+    {
+      "icon_id": "17590854",
+      "name": "热词",
+      "font_class": "reci",
+      "unicode": "e85c",
+      "unicode_decimal": 59484
+    },
+    {
+      "icon_id": "17590855",
+      "name": "下载-n",
+      "font_class": "xiazai-n",
+      "unicode": "e85d",
+      "unicode_decimal": 59485
+    },
+    {
+      "icon_id": "17590856",
+      "name": "Patch",
+      "font_class": "Patch",
+      "unicode": "e85e",
+      "unicode_decimal": 59486
+    },
+    {
+      "icon_id": "17590857",
+      "name": "下载-h",
+      "font_class": "xiazai-h",
+      "unicode": "e85f",
+      "unicode_decimal": 59487
+    },
+    {
+      "icon_id": "8922415",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e700",
+      "unicode_decimal": 59136
+    },
+    {
+      "icon_id": "8921318",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "8921326",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "8921333",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "8922464",
+      "name": "上传",
+      "font_class": "shangchuan1",
+      "unicode": "e701",
+      "unicode_decimal": 59137
+    },
+    {
+      "icon_id": "10017034",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e748",
+      "unicode_decimal": 59208
+    },
+    {
+      "icon_id": "12870740",
+      "name": "清",
+      "font_class": "qing",
+      "unicode": "e7ea",
+      "unicode_decimal": 59370
+    },
     {
       "icon_id": "8921319",
       "name": "错误",

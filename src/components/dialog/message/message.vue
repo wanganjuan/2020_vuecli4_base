@@ -31,9 +31,9 @@ export default {
     }
   },
   mounted () {
-    // this.timeout = setTimeout(() => {
-    //   this.closeMessage()
-    // }, 3000)
+    this.timeout = setTimeout(() => {
+      this.closeMessage()
+    }, 3000)
   },
   beforeDestroy () {
     this.timeout && clearTimeout(this.timeout)
@@ -80,6 +80,11 @@ export default {
       font-size 12px
       right 20px
       cursor pointer
+      width 12px
+      height 12px
+      color #9BA0A6
+      transform scale(0.8)
+      top 5px
       &:hover {
         color #3065FF
       }

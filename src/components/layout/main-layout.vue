@@ -1,7 +1,6 @@
 <template>
   <div class="m-layout">
     <header class="m-header"></header>
-    <Nav />
     <div class="m-content">
       <router-view />
     </div>
@@ -9,12 +8,8 @@
 </template>
 
 <script>
-import Nav from './nav-common'
 export default {
-  name: 'nav-common',
-  components: {
-    Nav
-  }
+  name: 'nav-common'
 }
 </script>
 
@@ -23,10 +18,11 @@ export default {
     min-height 100vh
     position relative
     .m-header
-      height 50px
-      line-height 50px
+      line-height 54px
       width 100%
-      background blue
+      height:54px;
+      background:linear-gradient(90deg,rgba(29,45,100,1) 0%,rgba(37,47,142,1) 100%);
+      box-shadow:0px 2px 8px 0px rgba(33,46,118,0.4);
       position: fixed;
       top: 0;
       left: 0;
@@ -34,7 +30,7 @@ export default {
     .m-content
       position absolute
       top 50px
-      left 64px
+      left 0
       padding-left 24px
       padding-right 24px
       bottom 0

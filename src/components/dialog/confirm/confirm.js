@@ -19,7 +19,7 @@ ConfirmConstructor.prototype.closeConfirm = function (stay, callback) {
   el.parentNode && el.parentNode.removeChild(el)
 }
 const confirm = (options = {}) => {
-  instance.content = options.content
+  instance.mes = options.mes
   instance.buttonDesc = options.buttonDesc
   instance.callback = options.callback
   instance.isDel = options.isDel || false

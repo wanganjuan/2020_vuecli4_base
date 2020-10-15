@@ -7,11 +7,11 @@ import Project from '@views/project/project.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import(/* webpackChunkName: "login" */ '../views/login/login.vue')
-  },
+  // {
+  //   path: '/login',
+  //   name: 'login',
+  //   component: () => import(/* webpackChunkName: "login" */ '../views/login/login.vue')
+  // },
   {
     path: '/',
     redirect: '/main/home'

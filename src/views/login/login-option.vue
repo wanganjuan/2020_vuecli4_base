@@ -25,7 +25,6 @@ import { toRefs, reactive } from '@vue/composition-api'
 import Login from './login.js'
 export default {
   setup (_, context) {
-    context.root.$bconfirm()
     const {root: {$router}} = context
     const _data = reactive({
       username: '',
@@ -41,6 +40,7 @@ export default {
       }
     }
     const _submitLogin = () => {
+      context.root.$bmessage()
       if (Login('username', _data) && Login('password', _data)) {
         login({
           username: _data.username,

@@ -10,6 +10,7 @@ const instance = new MessageConstructor({
 const el = instance.$el
 MessageConstructor.prototype.closeMessage = function (stay, callback) {
   const el = instance.$el
+  alert(1)
   el.parentNode && el.parentNode.removeChild(el)
 }
 const message = (options = {}) => {
